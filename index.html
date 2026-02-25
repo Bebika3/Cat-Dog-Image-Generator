@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Cat & Dog Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🐱 Cat & Dog Generator 🐶</h1>
+  <button id="toggleMode">Toggle Dark Mode</button>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Cat</h2>
+      <div class="loader" id="catLoader"></div>
+      <img id="catImg" src="">
+      <button onclick="getCat()">Get Cat</button>
+      <button onclick="downloadImage('catImg')">Download</button>
+    </div>
+
+    <div class="card">
+      <h2>Dog</h2>
+
+      <select id="breedSelect">
+        <option value="">Random Breed</option>
+      </select>
+
+      <div class="loader" id="dogLoader"></div>
+      <img id="dogImg" src="">
+      <button onclick="getDog()">Get Dog</button>
+      <button onclick="downloadImage('dogImg')">Download</button>
+    </div>
+
+  </div>
+
+  <p id="status">Status: Ready</p>
+
+<script src="script.js"></script>
+</body>
+</html>
